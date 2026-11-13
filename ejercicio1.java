@@ -1,0 +1,26 @@
+package vista;
+import javax.swing.JOptionPane;
+public class ejercicio1 {
+
+    public static void main(String[] args) {
+
+        String texto1 = JOptionPane.showInputDialog(
+                null, "Ingrese la primera calificación:");
+        String texto2 = JOptionPane.showInputDialog(
+                null, "Ingrese la segunda calificación:");
+        String texto3 = JOptionPane.showInputDialog(
+                null, "Ingrese la tercera calificación:");
+
+        double calif1 = Double.parseDouble(texto1);
+        double calif2 = Double.parseDouble(texto2);
+        double calif3 = Double.parseDouble(texto3);
+
+        double suma = calif1 + calif2 + calif3;
+        double promedio = suma / 3;
+
+        System.out.println("Calificaciones: " + calif1 + ", "
+                + calif2 + ", " + calif3);
+        System.out.println("Suma total: " + suma);
+        System.out.println("El promedio es: " + promedio);
+    }
+}
